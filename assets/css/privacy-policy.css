@@ -234,23 +234,32 @@ footer a:hover {
     }
 
     .hero h1 {
-        font-size: 1.45rem;
-        line-height: 1.25;
-        margin-bottom: 12px;
+        font-size: 1.35rem;
+        line-height: 1.2;
+        margin-bottom: 8px;
     }
 
     .hero p {
         font-size: 0.85rem;
+        line-height: 1.35;
         margin-bottom: 0;
     }
 
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
     .apps-section {
-        padding: 16px 0 24px;
+        padding: 12px 0 24px;
     }
 
     .section-title {
         font-size: 1.5rem;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
     }
 
     .apps-grid {
@@ -277,7 +286,7 @@ footer a:hover {
     }
 
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .app-card {
@@ -484,5 +493,16 @@ footer a:hover {
     .hero {
         background: white;
         color: var(--text-color);
+    }
+}
+
+/* Desktop responsive styles */
+@media (min-width: 769px) {
+    .desktop-only {
+        display: block;
+    }
+
+    .mobile-only {
+        display: none;
     }
 }
