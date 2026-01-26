@@ -363,6 +363,8 @@ footer a:hover {
     font-size: 1.5rem;
     color: white;
     font-weight: 700;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .app-info h2 {
