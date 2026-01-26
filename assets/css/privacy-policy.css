@@ -228,19 +228,19 @@ footer a:hover {
     }
 
     .hero {
-        padding: 48px 0;
+        padding: 24px 0;
     }
 
     .hero h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .apps-section {
-        padding: 40px 0;
+        padding: 24px 0;
     }
 
     .section-title {
