@@ -48,10 +48,52 @@ header .container {
     align-items: center;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
 header h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-color);
+}
+
+.logo-link {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.7;
+}
+
+.main-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    background: var(--gray-100);
+}
+
+.nav-link.active {
+    background: var(--primary-color);
+    color: white;
 }
 
 .language-switcher {
@@ -290,10 +332,15 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header .container {
+    .header-content {
         flex-direction: column;
         gap: 12px;
         align-items: flex-start;
+    }
+
+    .main-nav {
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .language-switcher {
