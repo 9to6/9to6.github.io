@@ -117,6 +117,81 @@
     color: var(--primary-color);
 }
 
+/* Account Deletion Section */
+.account-deletion {
+    margin-bottom: 48px;
+    scroll-margin-top: 80px; /* 앵커 링크 클릭 시 header에 안 가리도록 */
+}
+
+.deletion-card {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    margin-top: 16px;
+}
+
+.deletion-intro {
+    font-size: 1rem;
+    color: var(--gray-600);
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.deletion-card > div {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.deletion-card > div:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.deletion-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.deletion-card p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.deletion-card p:last-child {
+    margin-bottom: 0;
+}
+
+.deletion-card ul {
+    margin: 12px 0 0 0;
+    padding-left: 24px;
+}
+
+.deletion-card li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.deletion-card li:last-child {
+    margin-bottom: 0;
+}
+
+.deletion-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.deletion-card a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .support-page {
@@ -147,6 +222,19 @@
         margin-bottom: 4px;
         min-width: auto;
     }
+
+    .deletion-card {
+        padding: 20px;
+    }
+
+    .deletion-card h3 {
+        font-size: 1rem;
+    }
+
+    .deletion-card > div {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -173,6 +261,20 @@
 
     .contact-card {
         padding: 16px;
+    }
+
+    .deletion-card {
+        padding: 16px;
+    }
+
+    .deletion-intro {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .deletion-card > div {
+        margin-bottom: 16px;
+        padding-bottom: 16px;
     }
 
     .support-page section {
