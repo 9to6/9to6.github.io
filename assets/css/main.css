@@ -321,6 +321,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.privacy-link .separator {
+    color: var(--gray-600);
+    margin: 0 8px;
+}
+
 /* Mobile-first visibility classes */
 .desktop-only {
     display: none;
