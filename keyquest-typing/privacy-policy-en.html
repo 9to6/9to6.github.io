@@ -35,7 +35,7 @@
     <main class="container">
         <article class="privacy-policy">
             <h1>Privacy Policy</h1>
-            <span class="last-updated">Last Updated: February 22, 2026</span>
+            <span class="last-updated">Last Updated: April 11, 2026</span>
 
             <section id="introduction">
                 <h2>1. Introduction</h2>
@@ -45,7 +45,7 @@
                 <ul>
                     <li><strong>App Name:</strong> KeyQuest Typing</li>
                     <li><strong>App Type:</strong> Typing practice game</li>
-                    <li><strong>Platform:</strong> Android (Google Play), iOS (App Store)</li>
+                    <li><strong>Platform:</strong> Android (Google Play), iOS (App Store), macOS (Mac App Store)</li>
                     <li><strong>Developer:</strong> Teukgeon Kwon (UniqBuild)</li>
                 </ul>
             </section>
@@ -67,16 +67,25 @@
 
                 <h3>2.3 Information Collected by Third-Party Services</h3>
                 <p>The app uses third-party services that may collect information used to identify you:</p>
+
+                <p><strong>Android and iOS Apps:</strong></p>
                 <ul>
-                    <li><strong>Google Play Services:</strong> Device information, usage statistics</li>
-                    <li><strong>AdMob:</strong> Advertising identifiers, device information, approximate location</li>
-                    <li><strong>Firebase Analytics & Crashlytics:</strong> App usage patterns, event data, crash reports, performance data</li>
+                    <li><strong>Google Play Services (Android only):</strong> Device information, usage statistics</li>
+                    <li><strong>AdMob (Android & iOS):</strong> Advertising identifiers, device information, approximate location</li>
+                    <li><strong>Firebase Analytics & Crashlytics (Android & iOS):</strong> App usage patterns, event data, crash reports, performance data</li>
                 </ul>
+
+                <p><strong>macOS App:</strong></p>
+                <ul>
+                    <li><strong>App Store Connect:</strong> App usage statistics, crash reports (provided by Apple)</li>
+                </ul>
+
                 <p>Privacy policies of third-party services:</p>
                 <ul>
                     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
                     <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob</a></li>
                     <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase</a></li>
+                    <li><a href="https://www.apple.com/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
                 </ul>
             </section>
 
@@ -86,9 +95,12 @@
                 <ul>
                     <li><strong>Service Provision and Maintenance:</strong> Providing app functionality, technical support</li>
                     <li><strong>App Improvement:</strong> Enhancing user experience, fixing bugs, optimizing performance</li>
-                    <li><strong>Advertising:</strong> Displaying relevant advertisements</li>
                     <li><strong>Analytics and Statistics:</strong> Analyzing usage patterns, understanding feature adoption</li>
                     <li><strong>Crash and Error Detection:</strong> Monitoring app stability</li>
+                </ul>
+                <p><strong>Additional Purposes for Android and iOS Apps:</strong></p>
+                <ul>
+                    <li><strong>Advertising:</strong> Displaying relevant advertisements</li>
                 </ul>
             </section>
 
@@ -139,11 +151,19 @@
             <section id="data-retention">
                 <h2>7. Data Retention Period</h2>
                 <p>We retain personal information for the following periods:</p>
+
+                <p><strong>Android and iOS Apps:</strong></p>
                 <ul>
                     <li><strong>Log Data:</strong> Up to 90 days after collection</li>
                     <li><strong>Analytics Data (Firebase):</strong> 14 months (according to Firebase policy)</li>
                     <li><strong>Advertising Data:</strong> Retained according to third-party advertising partners' policies</li>
                 </ul>
+
+                <p><strong>macOS App:</strong></p>
+                <ul>
+                    <li><strong>App Store Connect Data:</strong> Retained according to Apple's policy</li>
+                </ul>
+
                 <p><strong>Upon App Deletion:</strong> When you delete the app, data stored on your device is removed. However, data already transmitted to third-party services is handled according to their retention policies.</p>
             </section>
 
@@ -182,21 +202,31 @@
 
             <section id="international-transfer">
                 <h2>10. International Data Transfers</h2>
-                <p>Your information may be transferred to and processed on servers located outside your country of residence. This includes:</p>
+                <p>Your information may be transferred to and processed on servers located outside your country of residence:</p>
+
+                <p><strong>Android and iOS Apps:</strong></p>
                 <ul>
                     <li><strong>Google Servers:</strong> Located in the United States and other regions</li>
                     <li><strong>Firebase:</strong> Uses Google Cloud Platform infrastructure</li>
                 </ul>
+
+                <p><strong>macOS App:</strong></p>
+                <ul>
+                    <li><strong>Apple Servers:</strong> Located in the United States and other regions</li>
+                </ul>
+
                 <p>We ensure that appropriate safeguards are in place when your information is transferred to other countries. For EU users, we use Standard Contractual Clauses to protect your data.</p>
             </section>
 
             <section id="third-party-services">
                 <h2>11. Advertising and Third-Party Services</h2>
 
-                <h3>11.1 AdMob (Google)</h3>
-                <p>KeyQuest Typing uses Google AdMob to display advertisements. AdMob may collect the following information:</p>
+                <h3>11.1 Android and iOS Apps</h3>
+
+                <h4>11.1.1 AdMob (Google)</h4>
+                <p>The Android and iOS versions of KeyQuest Typing use Google AdMob to display advertisements. AdMob may collect the following information:</p>
                 <ul>
-                    <li>Advertising identifiers (AAID)</li>
+                    <li>Advertising identifiers (AAID - Android, IDFA - iOS)</li>
                     <li>Device information</li>
                     <li>Approximate location</li>
                     <li>Ad click and view data</li>
@@ -204,11 +234,12 @@
                 <p><strong>How to Opt-Out of Personalized Ads:</strong></p>
                 <ul>
                     <li><strong>Android:</strong> Settings > Google > Ads > Enable "Opt out of Ads Personalization"</li>
+                    <li><strong>iOS:</strong> Settings > Privacy & Security > Tracking > Disable "Allow Apps to Request to Track"</li>
                 </ul>
                 <p>More information: <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob and Privacy</a></p>
 
-                <h3>11.2 Firebase Analytics & Crashlytics</h3>
-                <p>KeyQuest Typing uses Google Firebase to collect app usage statistics and crash reports.</p>
+                <h4>11.1.2 Firebase Analytics & Crashlytics</h4>
+                <p>The Android and iOS versions of KeyQuest Typing use Google Firebase to collect app usage statistics and crash reports.</p>
                 <p><strong>Information Collected:</strong></p>
                 <ul>
                     <li>Session duration and frequency</li>
@@ -220,6 +251,22 @@
                 <p><strong>Purpose:</strong> User behavior analysis, app performance monitoring, feature improvement, stability enhancement</p>
                 <p><strong>Data Retention:</strong> 14 months</p>
                 <p>More information: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy</a></p>
+
+                <h3>11.2 macOS App</h3>
+
+                <h4>11.2.1 App Store Connect</h4>
+                <p>The macOS version of KeyQuest Typing uses Apple's App Store Connect to collect app usage statistics and crash reports.</p>
+                <p><strong>Information Collected:</strong></p>
+                <ul>
+                    <li>Session duration and frequency</li>
+                    <li>Device information (Mac model, macOS version)</li>
+                    <li>Region and language settings</li>
+                    <li>Crash reports</li>
+                </ul>
+                <p><strong>Purpose:</strong> App performance monitoring, feature improvement, stability enhancement</p>
+                <p>More information: <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></p>
+
+                <p><strong>The macOS app does not contain advertisements.</strong></p>
             </section>
 
             <section id="external-links">
