@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loop Lingo Chrome extension Privacy Policy. Detailed information about data handling, storage, and permissions.">
+    <meta name="keywords" content="Loop Lingo, Chrome extension, Privacy Policy, YouTube language learning">
+    <meta name="author" content="Teukgeon Kwon">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Loop Lingo - Privacy Policy">
+    <meta property="og:description" content="Loop Lingo Chrome extension Privacy Policy">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://9to6.github.io/loop-lingo/privacy-policy-en.html">
+
+    <title>Loop Lingo - Privacy Policy</title>
+    <link rel="canonical" href="https://9to6.github.io/loop-lingo/privacy-policy-en.html">
+    <link rel="alternate" hreflang="en" href="https://9to6.github.io/loop-lingo/privacy-policy-en.html">
+    <link rel="alternate" hreflang="ko" href="https://9to6.github.io/loop-lingo/privacy-policy-ko.html">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/privacy-policy.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Loop Lingo</h1>
+            <nav class="language-switcher">
+                <a href="privacy-policy-ko.html">한국어</a>
+                <a href="privacy-policy-en.html" class="active">English</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="privacy-policy">
+            <h1>Privacy Policy</h1>
+            <span class="last-updated">Last Updated: May 22, 2026</span>
+
+            <div class="highlight-box">
+                <p><strong>Summary:</strong> Loop Lingo does not transmit any data to external servers. All data is stored exclusively on your device. We do not use advertising, analytics tools, or any third-party tracking services.</p>
+            </div>
+
+            <section id="introduction">
+                <h2>1. Introduction</h2>
+                <p>Teukgeon Kwon ("Developer", "we", "us", "our") provides Loop Lingo ("Extension", "Service") as a Chrome browser extension. This service is provided "as is."</p>
+                <p>This Privacy Policy explains how data is handled when you use Loop Lingo. By installing and using this extension, you agree to this policy.</p>
+                <p><strong>Extension Information:</strong></p>
+                <ul>
+                    <li><strong>Name:</strong> Loop Lingo</li>
+                    <li><strong>Type:</strong> YouTube language learning Chrome extension</li>
+                    <li><strong>Platform:</strong> Google Chrome (Desktop)</li>
+                    <li><strong>Developer:</strong> Teukgeon Kwon (UniqBuild)</li>
+                </ul>
+            </section>
+
+            <section id="information-collection">
+                <h2>2. Data Handling</h2>
+
+                <h3>2.1 Information We Do NOT Collect</h3>
+                <p>Loop Lingo does <strong>not collect or transmit</strong> the following information:</p>
+                <ul>
+                    <li>Personal identifiers such as name, email address, or phone number</li>
+                    <li>Location data</li>
+                    <li>Advertising identifiers (IDFA, AAID, etc.)</li>
+                    <li>Browser history</li>
+                    <li>YouTube watch history or account information</li>
+                    <li>Device information or IP address</li>
+                </ul>
+                <p>We do not use any analytics tools, advertising networks, or third-party tracking services.</p>
+
+                <h3>2.2 Data Stored Locally on Your Device</h3>
+                <p>The extension stores the following data <strong>exclusively in <code>chrome.storage.local</code> on your device</strong>. This data is never transmitted externally:</p>
+                <ul>
+                    <li><strong>Preferences:</strong> Learning language, native language, UI language, selected learning flow, panel visibility state, panel opacity</li>
+                    <li><strong>Custom learning flows:</strong> User-created step configurations for the learning workflow</li>
+                    <li><strong>Session history:</strong> Local learning history including YouTube video IDs, segment timestamps, and practice counts</li>
+                </ul>
+                <p>This data exists only on the device where the extension is installed and is never stored on our servers or any external service.</p>
+
+                <h3>2.3 Segment Sharing Feature</h3>
+                <p>When using the segment sharing feature, study segment information (start/end timestamps and a learning flow snapshot) is Base64-encoded and appended as a query parameter to a YouTube URL. This data does not pass through any server — it is shared entirely through the generated URL.</p>
+            </section>
+
+            <section id="permissions">
+                <h2>3. Permission Usage</h2>
+                <p>Loop Lingo uses the following Chrome extension permissions:</p>
+
+                <h3>3.1 storage</h3>
+                <p>Used to persist preferences, custom learning flows, and session history in <code>chrome.storage.local</code>. All data remains on your device and is never transmitted externally.</p>
+
+                <h3>3.2 activeTab</h3>
+                <p>Used by the toolbar popup to verify whether the currently active tab is a YouTube watch page. This permission is not used to read or modify tab content.</p>
+
+                <h3>3.3 Host Permission (https://www.youtube.com/*)</h3>
+                <p>Required to inject the learning panel content script into YouTube watch pages. The content script controls the YouTube video player (play, pause, seek) and interacts with the captions UI to implement segment loop learning. This permission applies exclusively to youtube.com and does not access any other websites.</p>
+            </section>
+
+            <section id="data-security">
+                <h2>4. Data Security</h2>
+                <p>All data in Loop Lingo is stored locally on your device and managed through Chrome's <code>storage.local</code> API. Since there is no external server transmission, there is no network transmission security risk.</p>
+                <p>Access to stored data requires the same Chrome profile with the Loop Lingo extension installed.</p>
+            </section>
+
+            <section id="data-retention">
+                <h2>5. Data Retention and Deletion</h2>
+                <p>You can delete your data in the following ways:</p>
+                <ul>
+                    <li><strong>Uninstall the extension:</strong> Removing Loop Lingo from Chrome deletes all data stored in <code>chrome.storage.local</code>.</li>
+                    <li><strong>Clear Chrome data:</strong> You can clear browser data including extension data through Chrome settings.</li>
+                </ul>
+                <p>Since no user data exists on our servers, no server-side deletion process is required.</p>
+            </section>
+
+            <section id="children-privacy">
+                <h2>6. Children's Privacy</h2>
+                <p>This service is not directed at children under the age of 13 (or the minimum age defined by local law). While the extension does not collect any personal information, we recommend that parents or guardians monitor their child's use of the extension.</p>
+            </section>
+
+            <section id="user-rights">
+                <h2>7. Your Rights</h2>
+                <p>Since Loop Lingo does not store user data on external servers, data access, correction, and deletion requests can be handled directly through Chrome settings.</p>
+                <p>For policy-related inquiries, please use the contact information below.</p>
+
+                <h3>7.1 Korean Residents (Personal Information Protection Act)</h3>
+                <p>Under the Korean Personal Information Protection Act, Korean residents have the following rights:</p>
+                <ul>
+                    <li>Request access to personal information</li>
+                    <li>Request correction or deletion of personal information</li>
+                    <li>Request suspension of personal information processing</li>
+                </ul>
+                <p>Since Loop Lingo does not retain personal information on external servers, uninstalling the extension removes all local data.</p>
+
+                <h3>7.2 European Union Residents (GDPR)</h3>
+                <p>Loop Lingo does not process or transmit personal data, so the scope of GDPR applicability as a data controller is limited. If you have any questions, please contact us using the information below.</p>
+
+                <h3>7.3 California Residents (CCPA)</h3>
+                <p>Loop Lingo does not collect, sell, or share personal information with third parties.</p>
+            </section>
+
+            <section id="third-party">
+                <h2>8. Third-Party Services</h2>
+                <p>Loop Lingo does not include any third-party services for advertising, analytics, or tracking purposes.</p>
+                <p>When the extension runs on youtube.com, it controls YouTube's own services (video player, captions UI) but does not collect or store any YouTube data. YouTube's privacy policy applies to Google's services independently.</p>
+            </section>
+
+            <section id="policy-changes">
+                <h2>9. Changes to This Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. Changes will be posted on this page, and the "Last Updated" date at the top will be revised accordingly.</p>
+                <p>For significant changes, we may provide notice through the Chrome Web Store extension update notes.</p>
+            </section>
+
+            <section id="contact">
+                <h2>10. Contact Us</h2>
+                <p>If you have any questions or suggestions about our Privacy Policy, please feel free to contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:cs@uniqbuild.co.kr">cs@uniqbuild.co.kr</a></li>
+                    <li><strong>Developer:</strong> Teukgeon Kwon</li>
+                    <li><strong>Company:</strong> UniqBuild</li>
+                    <li><strong>Response Time:</strong> Within 3-5 business days</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact: <a href="mailto:cs@uniqbuild.co.kr">cs@uniqbuild.co.kr</a></p>
+            <p>Developer: Teukgeon Kwon (UniqBuild)</p>
+            <p>&copy; 2026 UniqBuild. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
