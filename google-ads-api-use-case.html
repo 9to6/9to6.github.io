@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UniqBuild의 Google Ads API 사용 목적 — 자사 모바일 앱 설치 캠페인의 내부 리포팅 및 분석.">
+    <meta name="keywords" content="UniqBuild, Google Ads API, 앱 설치 캠페인, 모바일 앱 마케팅, 내부 리포팅">
+    <meta name="author" content="Teukgeon Kwon">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="Md2fqtkSUHJlV8sVoj00Kq7PZw1GSp0uiEcCTp451po" />
+    <meta name="google-site-verification" content="fQ4cnohoHR0nlL5oX6UodtZjA4qUUR7Ts_oURDHRxjA" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Google Ads API 사용 목적 — UniqBuild">
+    <meta property="og:description" content="UniqBuild가 자사 앱 홍보 캠페인의 내부 리포팅 및 분석을 위해 Google Ads와 Google Ads API를 어떻게 사용하는지 설명합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://app.uniqbuild.co.kr/google-ads-api-use-case.html">
+
+    <title>Google Ads API 사용 목적 — UniqBuild</title>
+    <link rel="canonical" href="https://app.uniqbuild.co.kr/google-ads-api-use-case.html">
+    <link rel="alternate" hreflang="en" href="https://app.uniqbuild.co.kr/google-ads-api-use-case-en.html">
+    <link rel="alternate" hreflang="ko" href="https://app.uniqbuild.co.kr/google-ads-api-use-case.html">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+
+    <!-- Schema.org 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "UniqBuild",
+      "url": "https://app.uniqbuild.co.kr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "302, 17-9 Eunpyeong-ro 13-gil",
+        "addressLocality": "Eunpyeong-gu",
+        "addressRegion": "Seoul",
+        "postalCode": "03459",
+        "addressCountry": "KR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "cs@uniqbuild.co.kr",
+        "contactType": "Customer Service"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Shin Dong Soon"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1><a href="index.html" class="logo-link">UniqBuild</a></h1>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <nav class="language-switcher">
+                <a href="google-ads-api-use-case.html" class="active">한국어</a>
+                <a href="google-ads-api-use-case-en.html">English</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Google Ads API 사용 목적</h1>
+            <p>UniqBuild의 Google Ads 및 Google Ads API 사용 방식 안내</p>
+        </div>
+    </section>
+
+    <main class="about-page">
+        <div class="container">
+
+            <!-- 회사 소개 -->
+            <section class="company-overview">
+                <h2>UniqBuild 소개</h2>
+                <p>
+                    UniqBuild는 모바일 애플리케이션을 개발하고 운영하는 회사입니다.
+                    대한민국 서울에 위치하며, 자사 개발자 계정으로 App Store와 Google Play에
+                    iOS 및 Android 앱을 출시하고 있습니다.
+                </p>
+            </section>
+
+            <!-- Google Ads 사용 목적 -->
+            <section class="company-overview">
+                <h2>Google Ads 사용 목적</h2>
+                <p>
+                    UniqBuild는 자사 모바일 앱의 사용자 확보를 위해 Google Ads를 사용하며,
+                    주로 Google Ads 앱 설치 캠페인(App Install Campaign)을 운영합니다.
+                    Google Ads API 사용과 관련된 모든 Google Ads 계정은 UniqBuild가
+                    소유하고 직접 운영하는 계정입니다.
+                </p>
+            </section>
+
+            <!-- Google Ads API 사용 용도 -->
+            <section class="company-overview">
+                <h2>Google Ads API 사용 용도</h2>
+                <p>
+                    Google Ads API는 자사 Google Ads 계정의 캠페인 성과 데이터(비용, 노출,
+                    클릭, 앱 설치 전환 지표 등)를 내부적으로 조회하기 위한 용도로 사용됩니다.
+                </p>
+                <p>
+                    조회된 데이터는 UniqBuild의 내부 리포팅 및 분석(대시보드 또는 리포트
+                    작성 포함) 용도로만 사용되며, 자사 앱들의 캠페인 성과를 모니터링하고
+                    효율을 비교하는 데 활용됩니다.
+                </p>
+            </section>
+
+            <!-- 대상 앱 -->
+            <section class="our-products">
+                <h2>대상 앱</h2>
+                <p>
+                    UniqBuild의 자사 모바일 앱에는 WallFit, BottleLog, KeyQuest Typing
+                    등이 포함됩니다. 이는 Google Ads 앱 설치 캠페인의 운영 대상이 될 수
+                    있는 자사 앱의 대표 예시입니다.
+                </p>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="assets/images/wallfit-icon.png" alt="WallFit 아이콘" class="product-icon">
+                        <div class="product-info">
+                            <h3>WallFit</h3>
+                            <p class="product-category">배경화면 제작</p>
+                        </div>
+                    </div>
+                    <div class="product-links">
+                        <a href="https://play.google.com/store/apps/details?id=kr.co.uniqbuild.backgroundimagemaker&hl=ko" target="_blank" rel="noopener noreferrer" class="product-link">Google Play</a>
+                        <span class="separator"> | </span>
+                        <a href="https://apps.apple.com/us/app/wallfit-wallpaper-maker/id1434231327" target="_blank" rel="noopener noreferrer" class="product-link">App Store</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://play-lh.googleusercontent.com/g8DaMe6QfOkXNryNj7-cZzgYnf7gUf0PxYdJtwsWxGB4ky_MQXrpcSDxb9b8vq8yRIIpiaTHafxjlpOGrJrRxg=w240-h480-rw" alt="BottleLog 아이콘" class="product-icon">
+                        <div class="product-info">
+                            <h3>BottleLog</h3>
+                            <p class="product-category">음료 기록</p>
+                        </div>
+                    </div>
+                    <div class="product-links">
+                        <a href="https://play.google.com/store/apps/details?id=kr.co.uniqbuild.bottlelog&hl=ko" target="_blank" rel="noopener noreferrer" class="product-link">Google Play</a>
+                        <span class="separator"> | </span>
+                        <a href="https://apps.apple.com/us/app/bottlelog-wine-whiskey/id6757179331" target="_blank" rel="noopener noreferrer" class="product-link">App Store</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/10/98/e3/1098e338-8f7c-6f88-dc50-cbac709f94fe/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg" alt="KeyQuest Typing 아이콘" class="product-icon">
+                        <div class="product-info">
+                            <h3>KeyQuest Typing</h3>
+                            <p class="product-category">타자 연습 게임</p>
+                        </div>
+                    </div>
+                    <div class="product-links">
+                        <a href="https://play.google.com/store/apps/details?id=kr.co.uniqbuild.keyquest" target="_blank" rel="noopener noreferrer" class="product-link">Google Play</a>
+                        <span class="separator"> | </span>
+                        <a href="https://apps.apple.com/app/id6759489829" target="_blank" rel="noopener noreferrer" class="product-link">App Store</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 사용 범위 제한 -->
+            <section class="company-overview">
+                <h2>사용 범위 제한</h2>
+                <p>
+                    <strong>UniqBuild는 광고 대행 서비스를 제공하지 않으며, 제3자의
+                    Google Ads 계정을 관리하거나 외부 고객을 대신해 Google Ads 데이터를
+                    처리하지 않습니다.</strong>
+                    Google Ads API는 오로지 자사 앱 홍보 캠페인의 성과 데이터를 조회하고
+                    분석하기 위한 용도로만 사용됩니다.
+                </p>
+            </section>
+
+            <!-- 연락처 -->
+            <section class="company-overview">
+                <h2>연락처</h2>
+                <p>
+                    본 사용 목적에 관한 문의는
+                    <a href="mailto:cs@uniqbuild.co.kr">cs@uniqbuild.co.kr</a>로 연락 주시기 바랍니다.
+                </p>
+                <p>
+                    <em>The English version of this page is the primary reference for Google Ads API review:
+                    <a href="google-ads-api-use-case-en.html">English version</a>.</em>
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>문의: <a href="mailto:cs@uniqbuild.co.kr">cs@uniqbuild.co.kr</a></p>
+            <p>개발자: Teukgeon Kwon (UniqBuild)</p>
+            <p>&copy; 2026 UniqBuild. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
