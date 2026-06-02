@@ -177,6 +177,146 @@
     text-decoration: underline;
 }
 
+/* Dashboard Mockup (Illustrative) */
+.dashboard-mock {
+    background: white;
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+.dashboard-mock .mock-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.dashboard-mock .mock-title {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.dashboard-mock .mock-range {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    background: var(--gray-100);
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.kpi-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.kpi-label {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 6px;
+}
+
+.kpi-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.campaign-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 520px;
+    font-size: 0.9rem;
+}
+
+.campaign-table th,
+.campaign-table td {
+    text-align: right;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--gray-200);
+    white-space: nowrap;
+}
+
+.campaign-table th:first-child,
+.campaign-table td:first-child {
+    text-align: left;
+}
+
+.campaign-table thead th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--gray-600);
+    border-bottom: 2px solid var(--gray-200);
+}
+
+.campaign-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.campaign-table .app-name {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.mock-caption {
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    font-style: italic;
+    text-align: center;
+}
+
+/* API field list */
+.api-field-list {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+}
+
+.api-field-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-100);
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+.api-field-list li:last-child {
+    border-bottom: none;
+}
+
+.api-field-list code {
+    background: var(--gray-100);
+    color: var(--text-color);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    word-break: break-word;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-page {
@@ -230,6 +370,23 @@
     .product-icon {
         width: 56px;
         height: 56px;
+    }
+
+    .dashboard-mock {
+        padding: 16px;
+    }
+
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .kpi-card {
+        padding: 12px;
+    }
+
+    .kpi-value {
+        font-size: 1.2rem;
     }
 }
 

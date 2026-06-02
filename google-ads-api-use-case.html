@@ -110,6 +110,117 @@
                     작성 포함) 용도로만 사용되며, 자사 앱들의 캠페인 성과를 모니터링하고
                     효율을 비교하는 데 활용됩니다.
                 </p>
+                <p>API로 조회하는 대표 필드 및 지표:</p>
+                <ul class="api-field-list">
+                    <li><code>campaign.name</code>, <code>campaign.status</code> — 캠페인 식별 및 상태</li>
+                    <li><code>metrics.cost_micros</code> — 광고 비용</li>
+                    <li><code>metrics.impressions</code>, <code>metrics.clicks</code> — 노출 및 클릭</li>
+                    <li><code>metrics.conversions</code> — 앱 설치 전환</li>
+                    <li>내부에서 계산하는 파생 지표: CPI(설치당 비용), CPC, 설치 전환율, ROAS</li>
+                </ul>
+                <p>
+                    <strong>데이터 흐름:</strong> Google Ads API → UniqBuild 내부 데이터 저장소 →
+                    UniqBuild 직원만 열람하는 내부 대시보드. 어떠한 데이터도 외부에 공개하거나
+                    공유하지 않습니다.
+                </p>
+            </section>
+
+            <!-- 접근 권한 -->
+            <section class="company-info-box">
+                <h2>접근 권한 (Access Level)</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Access Level</div>
+                        <div class="info-value">Internal (내부 전용)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">사용 주체</div>
+                        <div class="info-value">UniqBuild 직원만 사용 — 외부 고객에게 제공하지 않습니다.</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">접근 계정</div>
+                        <div class="info-value">UniqBuild가 소유·운영하는 Google Ads 계정에만 접근합니다.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 내부 대시보드 목업 -->
+            <section class="our-products">
+                <h2>내부 대시보드 (설계 목업)</h2>
+                <p>
+                    아래 목업은 Google Ads API로 조회한 데이터로 구성하는 내부 대시보드의
+                    예시입니다. UniqBuild 직원이 자사 앱 설치 캠페인 성과를 모니터링하는 데
+                    사용됩니다.
+                </p>
+                <div class="dashboard-mock">
+                    <div class="mock-bar">
+                        <span class="mock-title">UniqBuild · 앱 설치 캠페인</span>
+                        <span class="mock-range">최근 30일</span>
+                    </div>
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-label">Spend</div>
+                            <div class="kpi-value">$4,820</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Impressions</div>
+                            <div class="kpi-value">1.92M</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Clicks</div>
+                            <div class="kpi-value">38,140</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Installs</div>
+                            <div class="kpi-value">6,310</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">CPI</div>
+                            <div class="kpi-value">$0.76</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">ROAS</div>
+                            <div class="kpi-value">1.8x</div>
+                        </div>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="campaign-table">
+                            <thead>
+                                <tr>
+                                    <th>앱 / 캠페인</th>
+                                    <th>Spend</th>
+                                    <th>Installs</th>
+                                    <th>CPI</th>
+                                    <th>전환율</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="app-name">WallFit — Install</td>
+                                    <td>$2,140</td>
+                                    <td>3,020</td>
+                                    <td>$0.71</td>
+                                    <td>16.8%</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-name">BottleLog — Install</td>
+                                    <td>$1,360</td>
+                                    <td>1,640</td>
+                                    <td>$0.83</td>
+                                    <td>15.2%</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-name">KeyQuest Typing — Install</td>
+                                    <td>$1,320</td>
+                                    <td>1,650</td>
+                                    <td>$0.80</td>
+                                    <td>16.1%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mock-caption">설계 목업 — 예시 데이터이며 문서 설명용입니다.</p>
+                </div>
             </section>
 
             <!-- 대상 앱 -->
@@ -197,6 +308,14 @@
 
     <footer>
         <div class="container">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <span class="separator">|</span>
+                <a href="about.html">회사 소개</a>
+                <span class="separator">|</span>
+                <a href="google-ads-api-use-case.html">Google Ads API 사용 목적</a>
+            </nav>
+            <p>UniqBuild · Seoul, Republic of Korea</p>
             <p>문의: <a href="mailto:cs@uniqbuild.co.kr">cs@uniqbuild.co.kr</a></p>
             <p>개발자: Teukgeon Kwon (UniqBuild)</p>
             <p>&copy; 2026 UniqBuild. All rights reserved.</p>

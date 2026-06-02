@@ -110,6 +110,117 @@
                     or reports used by UniqBuild, to monitor campaign performance and compare
                     efficiency across our owned apps.
                 </p>
+                <p>Representative fields and metrics we read from the API:</p>
+                <ul class="api-field-list">
+                    <li><code>campaign.name</code>, <code>campaign.status</code> — campaign identification and state</li>
+                    <li><code>metrics.cost_micros</code> — ad spend</li>
+                    <li><code>metrics.impressions</code>, <code>metrics.clicks</code> — reach and engagement</li>
+                    <li><code>metrics.conversions</code> — app install conversions</li>
+                    <li>Derived metrics computed internally: CPI (cost per install), CPC, install conversion rate, and ROAS</li>
+                </ul>
+                <p>
+                    <strong>Data flow:</strong> Google Ads API → UniqBuild internal data store →
+                    internal dashboard viewed by UniqBuild staff only. No data is exposed to or
+                    shared with external parties.
+                </p>
+            </section>
+
+            <!-- Access Level -->
+            <section class="company-info-box">
+                <h2>Access Level</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Access Level</div>
+                        <div class="info-value">Internal</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Who uses it</div>
+                        <div class="info-value">UniqBuild staff only — the tool is not offered to external customers.</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Accounts accessed</div>
+                        <div class="info-value">Only Google Ads accounts owned and operated by UniqBuild.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Internal Dashboard Mockup -->
+            <section class="our-products">
+                <h2>Internal Dashboard (Illustrative Mockup)</h2>
+                <p>
+                    The mockup below illustrates the internal dashboard we build with data
+                    retrieved from the Google Ads API. It is used by UniqBuild staff to monitor
+                    our own app install campaigns.
+                </p>
+                <div class="dashboard-mock">
+                    <div class="mock-bar">
+                        <span class="mock-title">UniqBuild · App Install Campaigns</span>
+                        <span class="mock-range">Last 30 days</span>
+                    </div>
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-label">Spend</div>
+                            <div class="kpi-value">$4,820</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Impressions</div>
+                            <div class="kpi-value">1.92M</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Clicks</div>
+                            <div class="kpi-value">38,140</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Installs</div>
+                            <div class="kpi-value">6,310</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">CPI</div>
+                            <div class="kpi-value">$0.76</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">ROAS</div>
+                            <div class="kpi-value">1.8x</div>
+                        </div>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="campaign-table">
+                            <thead>
+                                <tr>
+                                    <th>App / Campaign</th>
+                                    <th>Spend</th>
+                                    <th>Installs</th>
+                                    <th>CPI</th>
+                                    <th>Conv. rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="app-name">WallFit — Install</td>
+                                    <td>$2,140</td>
+                                    <td>3,020</td>
+                                    <td>$0.71</td>
+                                    <td>16.8%</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-name">BottleLog — Install</td>
+                                    <td>$1,360</td>
+                                    <td>1,640</td>
+                                    <td>$0.83</td>
+                                    <td>15.2%</td>
+                                </tr>
+                                <tr>
+                                    <td class="app-name">KeyQuest Typing — Install</td>
+                                    <td>$1,320</td>
+                                    <td>1,650</td>
+                                    <td>$0.80</td>
+                                    <td>16.1%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mock-caption">Illustrative mockup — sample data, for documentation purposes only.</p>
+                </div>
             </section>
 
             <!-- Apps Covered -->
@@ -193,6 +304,14 @@
 
     <footer>
         <div class="container">
+            <nav class="footer-nav">
+                <a href="index-en.html">Home</a>
+                <span class="separator">|</span>
+                <a href="about-en.html">About</a>
+                <span class="separator">|</span>
+                <a href="google-ads-api-use-case-en.html">Google Ads API Use Case</a>
+            </nav>
+            <p>UniqBuild · Seoul, Republic of Korea</p>
             <p>Contact: <a href="mailto:cs@uniqbuild.co.kr">cs@uniqbuild.co.kr</a></p>
             <p>Developer: Teukgeon Kwon (UniqBuild)</p>
             <p>&copy; 2026 UniqBuild. All rights reserved.</p>
