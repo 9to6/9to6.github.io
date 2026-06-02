@@ -101,17 +101,21 @@
             <section class="company-overview">
                 <h2>Use of the Google Ads API</h2>
                 <p>
-                    The Google Ads API is used internally to retrieve campaign performance data
-                    from our own Google Ads accounts, including cost, impressions, clicks, and
+                    The Google Ads API is used internally for two purposes within our own
+                    Google Ads accounts: (1) <strong>campaign management</strong> — programmatically
+                    creating, updating, pausing, and resuming our own app install campaigns, and
+                    adjusting budgets and bids; and (2) <strong>reporting and analysis</strong> —
+                    retrieving campaign performance data such as cost, impressions, clicks, and
                     app install conversion metrics.
                 </p>
                 <p>
-                    The data is used for internal reporting and analysis, including dashboards
-                    or reports used by UniqBuild, to monitor campaign performance and compare
-                    efficiency across our owned apps.
+                    The reporting data is used for internal dashboards and reports used by
+                    UniqBuild to monitor campaign performance and compare efficiency across our
+                    owned apps, and to inform the management operations above.
                 </p>
-                <p>Representative fields and metrics we read from the API:</p>
+                <p>Representative API operations and fields we use:</p>
                 <ul class="api-field-list">
+                    <li><strong>Campaign management:</strong> create / update / pause campaigns (<code>CampaignService</code>), adjust budgets (<code>CampaignBudgetService</code>), and update bids and status</li>
                     <li><code>campaign.name</code>, <code>campaign.status</code> — campaign identification and state</li>
                     <li><code>metrics.cost_micros</code> — ad spend</li>
                     <li><code>metrics.impressions</code>, <code>metrics.clicks</code> — reach and engagement</li>
